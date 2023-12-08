@@ -1,14 +1,13 @@
-// 1. 初始化 controller
-// 2. 用程序注册 logto user postRegister webhook ？如果不存在的话
 import { IncomingHttpHeaders } from 'http';
 import {MonoSystem,Controller, startServer, SQLiteDB} from "@interaqt/runtime";
 import { entities, relations, interactions } from './app/leaveRequestSimple.js'
 import {apis, createInitialData} from "./data.js";
 import {port} from "./config.js";
 
-const system = new MonoSystem()
+const db = new SQLiteDB('database.db')
+const system = new MonoSystem(db)
 const controller = new Controller(system, entities, relations, [], interactions, [])
-await controller.setup(true)
+await controller.setup()
 await createInitialData(controller)
 
 startServer(controller, {

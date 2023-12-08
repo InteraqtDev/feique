@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.prod.json",
-    "start": "npm run build && node --experimental-modules --es-module-specifier-resolution=node dist/server.js | pino-pretty"
+    "install": "npm run build && node --experimental-modules --es-module-specifier-resolution=node dist/install.js | pino-pretty",
+    "start": "npm run build && node --experimental-modules --es-module-specifier-resolution=node dist/server.js | pino-pretty",
+    "istart": "npm run install && npm run start"
   },
   "author": "",
   "license": "ISC",
