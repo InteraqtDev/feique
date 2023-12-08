@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axii": "^2.0.0",
+    "axii": "^2.0.2",
     "vite": "^5.0.6"
   }
 }

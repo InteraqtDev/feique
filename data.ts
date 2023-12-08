@@ -1,5 +1,4 @@
-import {Controller, DataAPIThis, createDataAPI} from "@interaqt/runtime";
-import {BoolExp} from "@interaqt/shared";
+import {Controller, DataAPIThis, createDataAPI, BoolExp} from "@interaqt/runtime";
 
 export async function createInitialData(controller: Controller) {
     const system = controller.system

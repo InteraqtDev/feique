@@ -4,7 +4,7 @@ import {post} from './post';
 /* @jsx createElement */
 export function App({}, { createElement }: InjectHandles) {
 
-    const createdRequestId = atom('')
+    const createdRequestId = atom(null)
     const request = atom(null)
     const userA = atom(null)
     const userB = atom(null)

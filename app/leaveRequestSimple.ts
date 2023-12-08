@@ -18,7 +18,7 @@ import {
     Attributives,
     BoolExp,
     boolExpToAttributives, Attributive
-} from "@interaqt/shared";
+} from "@interaqt/runtime";
 import {Controller} from "@interaqt/runtime";
 
 export const globalUserRole = createUserRoleAttributive({})
