@@ -35,7 +35,6 @@ export function App({}, { createElement }: InjectHandles) {
                 }
             }
         }, userC()?.id)
-        console.log(1111, response.event.args.payload.request.id)
         createdRequestId(response.event.args.payload.request.id)
         await getRequest()
     }

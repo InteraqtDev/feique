@@ -13,8 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@interaqt/runtime": "^1.0.0-alpha.9",
-    "@interaqt/shared": "^1.0.2",
+    "@interaqt/runtime": "^0.8.0",
     "@types/node": "^20.10.4",
     "pino-pretty": "^10.2.3",
     "rimraf": "^5.0.5",
